@@ -1,0 +1,83 @@
+local library = loadstring(game.HttpGet(game, "https://pastebin.com/raw/d2jRTQCG"))()
+
+local w1 = library:Window("discord 01_vortex_10") -- main label
+
+
+w1:Button(
+    "buy sauce?[5 stomps]",
+    function()
+fireclickdetector(workspace.MAP.Pads["[Sauce] - 5 Stomps"].ClickDetector, 1000000000)
+    end
+) -- Text, Callback
+--
+
+
+w1:Button(
+    "buy super armor?[10 stomps]",
+    function()
+fireclickdetector(workspace.MAP.Pads["[Super Armor] - 10 Stomps"].ClickDetector, 100000000)
+    end
+) -- Text, Callback
+--
+
+
+w1:Button(
+    "buy super pizza?[5 stomps]",
+    function()
+fireclickdetector(workspace.MAP.Pads["[Super Pizza] - 5 Stomps"].ClickDetector, 1000000000000)
+    end
+) -- Text, Callback
+--
+
+w1:Button(
+    "buy armor?",
+    function()
+ fireclickdetector(workspace.MAP.Pads:GetChildren()[11].ClickDetector, 100000000)
+    end
+) -- Text, Callback
+
+w1:Button(
+    "buy pizza?",
+    function()
+fireclickdetector(workspace.MAP.Pads["[Pizza]"].ClickDetector, 1000000000)
+    end
+) -- Text, Callback
+
+w1:Button(
+    "buy tactical shotgun?",
+    function()
+ fireclickdetector(workspace.MAP.Pads["[Tactical Shotgun]"].ClickDetector, 1000000)
+    end
+) -- Text, Callback
+
+
+w1:Button(
+    "buy usp?",
+    function()
+ fireclickdetector(workspace.MAP.Pads["[USP]"].ClickDetector, 1000000000)
+    end
+) -- Text, Callback
+
+
+--workspace.MAP.Pads["[Pizza]"].ClickDetector
+w1:Toggle(
+    "Freeze",
+    "frz",
+    false,
+    function(toggled)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = toggled
+    end
+) -- Text, Flag, Enabled, Callback, Flag Location (Optional)
+
+w1:Button(
+    "Destroy GUI",
+    function()
+        for i, v in pairs(game.CoreGui:GetChildren()) do
+            if v:FindFirstChild("Top") then
+                v:Destroy()
+            end
+        end
+    end
+) -- Text, Callback
+
+w1:Label("da strike small gui") -- Text
