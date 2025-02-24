@@ -24,15 +24,25 @@ fireclickdetector(workspace.MAP.Pads["[Super Armor] - 10 Stomps"].ClickDetector,
 w1:Button(
     "buy super pizza?[5 stomps]",
     function()
-fireclickdetector(workspace.MAP.Pads["[Super Pizza] - 5 Stomps"].ClickDetector, 1000000000000)
+fireclickdetector(workspace.MAP.Pads["[Super Pizza] - 5 Stomps"].ClickDetector, 1000000000000000)
     end
 ) -- Text, Callback
 --
 
+
+
 w1:Button(
-    "buy armor?",
+    "buy armor?[v2]",
     function()
- fireclickdetector(workspace.MAP.Pads:GetChildren()[11].ClickDetector, 100000000)
+fireclickdetector(workspace.MAP.Pads["[Medium Armor]"].ClickDetector, 1000000000000000)
+wait(0.7)
+fireclickdetector(workspace.MAP.Pads:GetChildren()[9].ClickDetector, 1000000000000000)
+wait(0.7)
+fireclickdetector(workspace.MAP.Pads:GetChildren()[8].ClickDetector, 1000000000000000)
+wait(0.7)
+fireclickdetector(workspace.MAP.Pads["[Medium Armor]"].ClickDetector, 1000000000000000)
+wait(0.7)
+fireclickdetector(workspace.MAP.Pads:GetChildren()[7].ClickDetector, 1000000000000000)
     end
 ) -- Text, Callback
 
